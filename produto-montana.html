@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Montana - Viva Cor Tintas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .conteudo-produto {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-produto {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .imagem-central {
+        text-align: center;
+        flex-shrink: 0;
+        width: 300px;
+      }
+
+      .imagem-central img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .caracteristicas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 600px;
+        flex-grow: 1;
+      }
+
+      .container-caracteristica {
+        background-color: #d0021b;
+        color: white;
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .container-caracteristica strong {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .descricao-texto {
+        margin-top: 40px;
+        border-top: 2px solid #004d99;
+        padding-top: 20px;
+      }
+
+      .descricao-texto h3 {
+        color: #004d99;
+        margin-bottom: 15px;
+      }
+
+      .cabecalho {
+        background-color: #004d99;
+        padding: 10px 0;
+      }
+
+      .cabecalho-conteudo {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .logo {
+        height: 50px;
+        width: auto;
+      }
+
+      .rodape-paleta {
+        margin-top: 40px;
+        border-top: 1px solid #ccc;
+      }
+
+      .linha-cores {
+        display: flex;
+        width: 100%;
+      }
+
+      .bloco-cor {
+        height: 40px;
+        flex-grow: 1;
+      }
+
+      .link-voltar {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .link-voltar:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cabecalho">
+      <div class="cabecalho-conteudo">
+        <a href="index.html" style="text-decoration: none">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1zYuW4QvmOZDWUrh0X6Jl-lbNprHXQ_UFRw&s"
+            alt="Viva Cor Tintas Logo"
+            class="logo"
+          />
+        </a>
+        <input
+          type="text"
+          placeholder="Buscar produto..."
+          style="
+            background-color: #fff;
+            border: 1px solid #004d99;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 4px;
+            width: 200px;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+          "
+        />
+      </div>
+    </div>
+
+    <div class="conteudo-principal">
+      <div class="conteudo-produto">
+        <a href="index.html" class="link-voltar">
+          &#9664; Voltar para a Lista de Produtos
+        </a>
+        <h2 style="color: #004d99; text-align: center">
+          MONTANA OSMOCOLOR STAIN PRESERVATIVO
+        </h2>
+        <h3 style="text-align: center; color: #555; font-style: italic">
+          O seu aliado na proteção e beleza da madeira.
+        </h3>
+
+        <div class="info-produto">
+          <div class="imagem-central">
+            <img
+              src="https://montana.com.br/wp-content/uploads/2024/05/osmocolor-base-solvente.jpg"
+              alt="Lata de Osmocolor Stain Preservativo"
+            />
+          </div>
+
+          <div class="caracteristicas">
+            <div class="container-caracteristica">
+              <strong>Tipo de Produto:</strong>
+              Stain Preservativo Transparente
+            </div>
+            <div class="container-caracteristica">
+              <strong>Acabamento:</strong>
+              Transparente, realça os veios da madeira
+            </div>
+            <div class="container-caracteristica">
+              <strong>Proteção:</strong>
+              Fungos, bolor e raios UV
+            </div>
+            <div class="container-caracteristica">
+              <strong>Uso Recomendado:</strong>
+              Exterior e Interior (Portas, Janelas, Decks, Pergolados)
+            </div>
+            <div class="container-caracteristica">
+              <strong>Rendimento:</strong>
+              Até 30m² por demão (3.6L)
+            </div>
+            <div class="container-caracteristica">
+              <strong>Preço Viva Cor:</strong>
+              R$ 299,00 / 3.6L
+            </div>
+          </div>
+        </div>
+
+        <div class="descricao-texto">
+          <h3>Descrição Completa</h3>
+          <p>
+            O Osmocolor Stain Preservativo é um acabamento de alta performance e
+            durabilidade, que penetra na madeira, proporcionando proteção eficaz
+            contra intempéries, fungos, e raios UV. Por não formar uma película
+            espessa, ele não trinca e não descasca, facilitando a manutenção.
+            Ideal para quem busca um acabamento que preserva o aspecto natural
+            da madeira, oferecendo cores intensas e vibrantes.
+          </p>
+          <p>
+            Dicas de Aplicação: Lixar a superfície levemente, aplicar de 2 a 3
+            demãos, respeitando o intervalo de secagem entre as camadas. Utilize
+            pincel de cerdas macias.
+          </p>
+        </div>
+      </div>
+
+      <div class="rodape-paleta">
+        <h3
+          style="
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0;
+            background-color: #ddd;
+          "
+        >
+          Cores de Destaque da Temporada
+        </h3>
+
+        <div class="linha-cores">
+          <div class="bloco-cor" style="background-color: #4a90e2"></div>
+          <div class="bloco-cor" style="background-color: #7ed321"></div>
+          <div class="bloco-cor" style="background-color: #d0021b"></div>
+          <div class="bloco-cor" style="background-color: #f8e71c"></div>
+          <div class="bloco-cor" style="background-color: #9013fe"></div>
+          <div class="bloco-cor" style="background-color: #50e3c2"></div>
+          <div class="bloco-cor" style="background-color: #4a4a4a"></div>
+          <div
+            class="bloco-cor"
+            style="background-color: #ffffff; border-left: 1px solid #ccc"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

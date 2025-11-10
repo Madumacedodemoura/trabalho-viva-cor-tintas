@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suvinil - Viva Cor Tintas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Estilos específicos para a página de produto (Repetidos para a estrutura funcionar) */
+      .conteudo-produto {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-produto {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .imagem-central {
+        text-align: center;
+        flex-shrink: 0;
+        width: 300px;
+      }
+
+      .imagem-central img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .caracteristicas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 600px;
+        flex-grow: 1;
+      }
+
+      .container-caracteristica {
+        background-color: #d0021b; /* Cor vermelha */
+        color: white;
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .container-caracteristica strong {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .descricao-texto {
+        margin-top: 40px;
+        border-top: 2px solid #004d99;
+        padding-top: 20px;
+      }
+
+      .descricao-texto h3 {
+        color: #004d99;
+        margin-bottom: 15px;
+      }
+
+      .cabecalho {
+        background-color: #004d99;
+        padding: 10px 0;
+      }
+
+      .cabecalho-conteudo {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .logo {
+        height: 50px;
+        width: auto;
+      }
+
+      .rodape-paleta {
+        margin-top: 40px;
+        border-top: 1px solid #ccc;
+      }
+
+      .linha-cores {
+        display: flex;
+        width: 100%;
+      }
+
+      .bloco-cor {
+        height: 40px;
+        flex-grow: 1;
+      }
+
+      .link-voltar {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .link-voltar:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cabecalho">
+      <div class="cabecalho-conteudo">
+        <a href="index.html" style="text-decoration: none">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1zYuW4QvmOZDWUrh0X6Jl-lbNprHXQ_UFRw&s"
+            alt="Viva Cor Tintas Logo"
+            class="logo"
+          />
+        </a>
+        <input
+          type="text"
+          placeholder="Buscar produto..."
+          style="
+            background-color: #fff;
+            border: 1px solid #004d99;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 4px;
+            width: 200px;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+          "
+        />
+      </div>
+    </div>
+
+    <div class="conteudo-principal">
+      <div class="conteudo-produto">
+        <a href="index.html" class="link-voltar">
+          &#9664; Voltar para a Lista de Produtos
+        </a>
+        <h2 style="color: #004d99; text-align: center">
+          SUVINIL TOQUE DE BRILHO ACRÍLICO PREMIUM
+        </h2>
+        <h3 style="text-align: center; color: #555; font-style: italic">
+          Semi-brilho que valoriza suas paredes.
+        </h3>
+
+        <div class="info-produto">
+          <div class="imagem-central">
+            <img
+              src="https://chatuba.vtexassets.com/arquivos/ids/187454/Tinta-Acrilica-Semibrilho-Branco-Neve-36L-Suvinil.jpg?v=638507090888930000"
+              alt="Lata de Suvinil Toque de Brilho Acrílico Premium"
+            />
+          </div>
+
+          <div class="caracteristicas">
+            <div class="container-caracteristica">
+              <strong>Tipo de Produto:</strong>
+              Tinta Acrílica Premium
+            </div>
+            <div class="container-caracteristica">
+              <strong>Acabamento:</strong>
+              Semi-brilho
+            </div>
+            <div class="container-caracteristica">
+              <strong>Superfícies:</strong>
+              Alvenaria, Gesso e Massa Corrida
+            </div>
+            <div class="container-caracteristica">
+              <strong>Lavabilidade:</strong>
+              Alta, fácil de limpar
+            </div>
+            <div class="container-caracteristica">
+              <strong>Rendimento:</strong>
+              Até 30m² por demão (3.6L)
+            </div>
+            <div class="container-caracteristica">
+              <strong>Preço Viva Cor:</strong>
+              R$ 289,00 / 3.6L
+            </div>
+          </div>
+        </div>
+
+        <div class="descricao-texto">
+          <h3>Descrição Completa</h3>
+          <p>
+            A Suvinil Toque de Brilho é uma tinta acrílica de alta qualidade que
+            proporciona um elegante acabamento semi-brilho. Este acabamento não
+            só adiciona sofisticação ao ambiente, mas também torna a limpeza
+            muito mais fácil, sendo ideal para áreas de maior tráfego. Sua
+            fórmula premium garante excelente cobertura e durabilidade da cor.
+          </p>
+          <p>
+            Dicas de Aplicação: Aplique com rolo de lã ou pincel. Diluir 20% a
+            30% com água potável na primeira demão e 10% a 20% nas demais.
+          </p>
+        </div>
+      </div>
+
+      <div class="rodape-paleta">
+        <h3
+          style="
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0;
+            background-color: #ddd;
+          "
+        >
+          Cores de Destaque da Temporada
+        </h3>
+
+        <div class="linha-cores">
+          <div class="bloco-cor" style="background-color: #4a90e2"></div>
+          <div class="bloco-cor" style="background-color: #7ed321"></div>
+          <div class="bloco-cor" style="background-color: #d0021b"></div>
+          <div class="bloco-cor" style="background-color: #f8e71c"></div>
+          <div class="bloco-cor" style="background-color: #9013fe"></div>
+          <div class="bloco-cor" style="background-color: #50e3c2"></div>
+          <div class="bloco-cor" style="background-color: #4a4a4a"></div>
+          <div
+            class="bloco-cor"
+            style="background-color: #ffffff; border-left: 1px solid #ccc"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
